@@ -1,7 +1,7 @@
 # Тестовое задание | FUNBOX
 
 <p align="right">
-LEVEL #1 | <a href="ANSWERS.md">LEVEL #2</a>
+LEVEL #1 | <a href="https://github.com/morethenlife/funbox/blob/master/ANSWERS.md">LEVEL #2</a>
 </p>
 
 ## Ответы на вопросы
