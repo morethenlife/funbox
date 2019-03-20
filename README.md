@@ -7,7 +7,7 @@
 
 ## Описание
 
-[Демо](https://github.com/morethenlife/builds)
+[Демо](https://morethenlife.github.io/funbox/builds)
 
 Используемые технологии
 
