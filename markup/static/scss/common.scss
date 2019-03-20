@@ -1,0 +1,30 @@
+// Common styles of the project
+
+html {
+    height: 100%;
+}
+
+* html .page__wrapper {
+    height: 100%;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    text-align: left;
+    color: $color-main;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-center {
+    text-align: center;
+}

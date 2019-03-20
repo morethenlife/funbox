@@ -1,0 +1,101 @@
+mixin product-card(data, mods, theme)
+    //-   mods {string}  - стилевые модификаторы
+    //- Вызов:
+        +products()
+    -
+        //- список модификаторов
+        var allMods = '';
+        if(typeof(mods) === 'string') {
+            var modsList = mods.split(',');
+
+            for (var i = 0; i < modsList.length; i++) {
+                allMods = allMods + ' product-card--' + modsList[i].trim();
+            }
+        }
+
+    if theme === 'theme1'
+        .product-card(class=allMods)&attributes(attributes)
+            .js-product-card.product-card__item
+                .product-card__header
+                    .product-card__header-title Сказочное заморское яство
+                    .product-card__header-title.product-card__header-title--hidden Котэ не одобряет?
+                .product-card__body
+                    .product-card__body-title
+                        | Нямушка
+                        span c фуа-гра
+                    ul.product-card__list
+                        li.product-card__list-item
+                            strong 10&nbsp;
+                            | порций
+                        li.product-card__list-item
+                            | мышь в подарок
+                    img(src="%=static=%img/assets/product-card/funbox_logo.png" alt="Нямушка" title="Нямушка").product-card__img
+                    .product-card__weight
+                        .product-card__weight-num 0,5
+                        .product-card__weight-descr кг
+            .product-card__footer
+                .product-card__footer-text.product-card__footer-text--default
+                    |Чего сидишь? Порадуй котэ,&nbsp;
+                    a(href="javascript:void(0);").js-product-card купи.
+                .product-card__footer-text.product-card__footer-text--active
+                    | Печень утки разварная с артишоками.
+                .product-card__footer-text.product-card__footer-text--disabled
+                    |Печалька, с курой закончился.
+
+    else if theme === 'theme2'
+        .product-card(class=allMods)&attributes(attributes)
+            .js-product-card.product-card__item
+                .product-card__header
+                    .product-card__header-title Сказочное заморское яство
+                    .product-card__header-title.product-card__header-title--hidden Котэ не одобряет?
+                .product-card__body
+                    .product-card__body-title
+                        | Нямушка
+                        span c рыбой
+                    ul.product-card__list
+                        li.product-card__list-item
+                            strong 40&nbsp;
+                            | порций
+                        li.product-card__list-item
+                            | 2 мыши в подарок
+                    img(src="%=static=%img/assets/product-card/funbox_logo.png" alt="Нямушка" title="Нямушка").product-card__img
+                    .product-card__weight
+                        .product-card__weight-num 2
+                        .product-card__weight-descr кг
+            .product-card__footer
+                .product-card__footer-text.product-card__footer-text--default
+                    | Чего сидишь? Порадуй котэ,&nbsp;
+                    a(href="javascript:void(0);").js-product-card купи.
+                .product-card__footer-text.product-card__footer-text--active
+                    | Головы щучьи с чесноком да свежайшая сёмгушка.
+                .product-card__footer-text.product-card__footer-text--disabled
+                    | Печалька, с курой закончился.
+
+    else if theme === 'theme3'
+        .product-card(class=allMods)&attributes(attributes)
+            .js-product-card.product-card__item
+                .product-card__header
+                    .product-card__header-title Сказочное заморское яство
+                    .product-card__header-title.product-card__header-title--hidden Котэ не одобряет?
+                .product-card__body
+                    .product-card__body-title
+                        | Нямушка
+                        span c курой
+                    ul.product-card__list
+                        li.product-card__list-item
+                            strong 100&nbsp;
+                            | порций
+                        li.product-card__list-item 5 мышей в подарок
+                        li заказчик доволен
+                    img(src="%=static=%img/assets/product-card/funbox_logo.png" alt="Нямушка" title="Нямушка").product-card__img
+                    .product-card__weight
+                        .product-card__weight-num 0,5
+                        .product-card__weight-descr кг
+            .product-card__footer
+                .product-card__footer-text.product-card__footer-text--default
+                    | Чего сидишь? Порадуй котэ,&nbsp;
+                    a(href="javascript:void(0);").js-product-card купи.
+                .product-card__footer-text.product-card__footer-text--active
+                    | Головы щучьи с чесноком да свежайшая сёмгушка.
+                .product-card__footer-text.product-card__footer-text--disabled
+                    | Печалька, с курой закончился.

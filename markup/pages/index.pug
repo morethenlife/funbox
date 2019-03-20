@@ -1,0 +1,27 @@
+doctype html
+html(class="no-js", lang="ru")
+
+    include ../components/head/head
+    include ../components/layout/layout
+    include ../components/page/page
+    include ../components/products/products
+    include ../components/product-card/product-card
+
+
+    head
+        +head(head.defaults)
+    body.page.page--home.page--theme1
+        |%=symbols=%
+        main.page__main
+            +products('fluid')
+                +product-card(data, 'md, default', 'theme1')
+                +product-card(data, 'md, active', 'theme2')
+                +product-card(data, 'md, disabled', 'theme3')
+
+
+
+        script(src='%=static=%js/separate-js/svg4everybody.min.js')
+        script svg4everybody();
+
+        //- Main scripts. You can replace it, but I recommend you to leave it here
+        script(src='%=static=%js/main%=hash=%%=min=%.js')

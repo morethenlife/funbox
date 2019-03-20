@@ -1,0 +1,21 @@
+mixin products(data, mods)
+
+    //-   mods {string}  - стилевые модификаторы
+    //- Вызов:
+        +products()
+    -
+        //- список модификаторов
+        var allMods = '';
+        if(typeof(mods) === 'string') {
+            var modsList = mods.split(',');
+
+            for (var i = 0; i < modsList.length; i++) {
+                allMods = allMods + ' alert--' + modsList[i].trim();
+            }
+        }
+
+    .products(class=allMods)&attributes(attributes)
+        .products__inner
+            .products__title Ты сегодня покормил кота?
+            .products__row
+                block

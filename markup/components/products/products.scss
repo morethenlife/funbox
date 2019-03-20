@@ -1,0 +1,22 @@
+.products {
+
+    &__inner {
+        @extend .layout__container;
+    }
+
+    &__row {
+        @extend .layout__row;
+    }
+
+    &__title {
+        font-family: $ExoThin;
+        font-size: 36px;
+        color: $color-white;
+        @extend .text-center;
+        margin-bottom: 30px;
+
+        @media (max-width: $screen-sm) {
+            font-size: 32px;
+        }
+    }
+}
